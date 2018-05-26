@@ -3,7 +3,7 @@
   <head>
     <title>Nibble - Individualize your pizza</title>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Oswald|Syncopate" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Oswald|Syncopate|Montserrat:400,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/ff38e0c35d.js"></script>
     <link rel="icon" href="img/slices.jpg">
     <link rel="stylesheet" href="style.css"/>
@@ -20,25 +20,28 @@
 
         <header>
           <div class="container-fluid bg-1">
-              <img src="img/slices.jpg" width="50px" style="float:left; margin: 5px 20px 0 0"/><span><h1> Nibble <small>individualize your pizza </small> </h1></span>
+              <img src="img/slices.jpg" width="40px" style="float:left; margin: 5px 20px 0 0"/><span><h1> Nibble <small>individualize your pizza </small> </h1></span>
           </div>
         </header>
+
+<!--- CALCULATOR -------------------------------------------------------->
+
+        <div class="calculator">
+        </div>
 
 <!--- LOADER ---------------------------------------------------------->
 
   			<div class="container-fluid bg-2">
-
-          <div class="row">
-  					<div class="col-md-12 text-center">
-  						<div class="loader"></div>
-  					</div>
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="loader"></div>
           </div>
-      			<div class="row">
-      				<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-  							<button type="button" class="btn-sharp create"> LET'S CREATE THIS BEAUTY </button>
-  						</div>
-  					</div>
-
+    			<div class="col-md-6 col-md-offset-3 text-center">
+    				Build an Italian style pizza on your favorite crust with a choice of any delicious toppings and sauces.
+            <br>Make it the way you like it!
+    			</div>
+      		<div class="col-md-8 col-md-offset-2 text-center">
+  					<button type="button" class="btn-sharp create"> Let's create this beauty </button>
+  				</div>
   			</div>
 
 <!--- SALE ------------------------------------------------------------>
@@ -79,7 +82,7 @@
         <div class="container section-title">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h1>Our suggestions <br><small> Hover to check ingredients, click to aply.</small></h1>
+              <h1>Our suggestions <br><small> Hover to check ingredients.</small></h1>
             </div>
           </div>
         </div>
@@ -169,7 +172,7 @@
         <div class="container section-title">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h1>Basic stuff <br><small> You're free to choose whatever you want. </small></h1>
+              <h1>Basic stuff <br><small> Just choose whatever you want. </small></h1>
             </div>
           </div>
         </div>
@@ -244,7 +247,7 @@
               <h2> SIZE </h2>
               <div class="btn-group btn-group-vertical" data-toggle="buttons">
                 <label class="btn active">
-                  <input type="radio" name='size' checked><i class="fa fa-circle-o fa-lg"></i><i class="fa fa-dot-circle-o fa-lg"></i> <span> 8" Smol </span><code class="pull-right">$4.00</code>
+                  <input type="radio" name='size' checked><i class="fa fa-circle-o fa-lg"></i><i class="fa fa-dot-circle-o fa-lg"></i> <span> 8" Small </span><code class="pull-right">$4.00</code>
                 </label>
                 <label class="btn">
                   <input type="radio" name='size'><i class="fa fa-circle-o fa-lg"></i><i class="fa fa-dot-circle-o fa-lg"></i><span> 10" Medium </span><code class="pull-right">$6.00</code>
@@ -259,7 +262,7 @@
             </div>
           </div>
 
-        </div>    <!-- Crust, crust flavor, sauce, size -->
+        </div>
 
 <!--- TOPPINGS -------------------------------------------------------->
 
@@ -414,7 +417,7 @@
         <div class="container section-title">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h1>Dip it deep <br><small> We have liquids as well!</small></h1>
+              <h1>Dip it deep <br><small> Oh yeah baby, you like it? Yeah?</small></h1>
             </div>
           </div>
         </div>
@@ -491,7 +494,7 @@
 
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-              <button type="button" class="btn-sharp submit"> LET'S MAKE IT </button>
+              <button type="button" class="btn-sharp submit"> Let's make it </button>
             </div>
           </div>
 
@@ -539,6 +542,7 @@
     $('.btn-sharp.create').on('click', function()
     {
       $('.bg-2').delay( 1800 ).slideUp( 800 );
+      $('.calculator').delay( 1800 ).toggle(800);
     });
 
 

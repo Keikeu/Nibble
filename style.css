@@ -8,12 +8,9 @@ a
 /* ==================== LAYOUT ============================= */
 body
 {
-  font-family: 'Open Sans' !important;
+  font-family: 'Montserrat' !important;
 }
-::-webkit-scrollbar
-{
-    display: none;
-}
+
 col-md-3
 {
   padding: 0;
@@ -33,18 +30,31 @@ header
 .section-title small
 {
   color: #eee;
-  font-family: 'Open Sans';
-  font-size: 15px;
+  font-family: 'Montserrat';
+  font-size: 16px;
   letter-spacing: 0;
+}
+
+
+/* ==== CALCULATOR ===== */
+.calculator
+{
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  z-index: 5;
+  background-color: #fff;
+  width: 80%;
+  height: 50px;
+  display: none;
 }
 
 /* ==== BG-1 - MOTTO HEADER ===== */
 .bg-1
 {
-  padding: 10px 0 25px 0;
+  padding: 7px 0;
   background-color: #222;
   color: #efeeee;
-  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -55,18 +65,18 @@ header
 {
   font-family: 'Lobster';
   font-weight: 700;
-  font-size: 38px;
+  font-size: 34px;
   margin: 10px 0;
   color: #fff;
   letter-spacing: 1px;
 }
 .bg-1 small
 {
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
   color: #ddd;
   margin-left: 13px;
   letter-spacing: 0px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -74,54 +84,54 @@ header
 /* ===== BG-2 - DECISION POINT ===== */
 .bg-2
 {
-  padding: 200px 0 200px 0;
+  padding-top: 30px;
+  height: 100vh;
   color: #fff;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  line-height: 36px;
+  background-image: url("img/bg-pizza.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 .btn-sharp
 {
-  margin-top: 30px;
-  border: 2px solid #fff;
-  transition: box-shadow 300ms;
-  background-color: inherit;
-  font-size: 16px;
+  margin-top: 60px;
+  transition-duration: 300ms;
+  background-color: #fff;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 700;
   letter-spacing: 1px;
   outline: none;
+  border: none;
+  color: #d3322c;
+}
+.btn-sharp:focus, .btn-sharp:active
+{
+  -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.75), 0px 10px 45px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.75), 0px 10px 45px -5px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.75), 0px 10px 45px -5px rgba(0,0,0,0.75);
+}
+.create:hover, .create:focus, .create:active
+{
   color: #fff;
-}
-.btn-sharp:focus, .btn-sharp:active:focus, .btn-sharp.active:focus
-{
-  -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.75);
-}
-.create
-{
-  width: 350px;
-  height: 75px;
-  border-radius: 0px;
-  transition: border-radius 800ms;
-}
-.create:hover, .create:focus
-{
-  border-radius: 225px;
+  background-color: #e4433d;
 }
 .submit
 {
-  width: 220px;
-  height: 70px;
   margin-bottom: 100px;
-  transition: border-radius 800ms;
-  transition-delay: 0s;
+  -webkit-box-shadow: 0px 10px 45px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 45px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 45px -5px rgba(0,0,0,0.75);
 }
-.submit:hover, .submit:focus
-{
-  border-radius: 140px;
-}
+
 .loader
 {
-	width: 200px;
-	height: 250px;
-  margin: auto;
+	width: 180px;
+	height: 200px;
+  margin: 30px auto;
 }
 
 
@@ -155,7 +165,6 @@ header
 }
 .soldes-2 .col-md-3
 {
-  /*border: 2px solid #fff;*/
   border: none;
   height: 195px;
   width: 195px;
@@ -252,7 +261,6 @@ header
 .create-page .col-md-3, .create-page .col-md-6
 {
   padding: 0px;
-  /*height: 100%;*/
 }
 label input[type="radio"] ~ i.fa.fa-circle-o
 {
