@@ -35,20 +35,6 @@ header
   letter-spacing: 0;
 }
 
-
-/* ==== CALCULATOR ===== */
-.calculator
-{
-  position: fixed;
-  bottom: 0;
-  left: 10%;
-  z-index: 5;
-  background-color: #fff;
-  width: 80%;
-  height: 50px;
-  display: none;
-}
-
 /* ==== BG-1 - MOTTO HEADER ===== */
 .bg-1
 {
@@ -131,11 +117,11 @@ header
 {
 	width: 180px;
 	height: 200px;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 
-/* ====== SOLDEEEEESSSSS === */
+/* ====== SALE - SOLDES === */
 .soldes
 {
   max-width: 880px;
@@ -152,7 +138,7 @@ header
   letter-spacing: 1px;
 }
 
-.soldes .col-md-3
+.soldes [class*='col-']
 {
   border: 2px dashed #fff;
   margin: 10px;
@@ -163,52 +149,45 @@ header
   -moz-box-shadow: 0px 10px 45px -5px rgba(0,0,0,0.75);
   box-shadow: 0px 10px 45px -5px rgba(0,0,0,0.75);
 }
-.soldes-2 .col-md-3
+
+
+/* ====== SUGGESTIONS === */
+.suggestions
 {
-  border: none;
-  height: 195px;
-  width: 195px;
+  max-width: 1000px;
 }
-.soldes2 img
+.suggestions [class*='col-']
 {
-  transition-duration: 300ms;
+  width: 220px;
+  margin-left: 0;
+  margin-right: 20px;
 }
-.figure:hover img
+.suggestions [class*="col-"]:last-child
 {
-  opacity: 0;
+  margin: 0;
 }
-.figure:hover .overlay
+
+.suggestions img
 {
-  opacity: 1;
+  border: 10px solid #eedcdc;
 }
-.figure:hover p
+.ingredients
 {
-  opacity: 1;
-  transform: translateY(0%);
+  width: 220px;
+  height: 130px;
+  padding: 10px;
+  background-color: #eedcdc;
+  margin-bottom: 20px;
 }
-.overlay
+.ingredients h4
 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0 10px;
-  opacity: 0;
-  transition-duration: 300ms;
-}
-.overlay h4
-{
-  margin-bottom: 40px;
+  margin-top: 0;
   font-family: 'Oswald';
   font-size: 22px;
-  letter-spacing: 1px;
 }
-.overlay p
+.ingredients p
 {
-  transform: translateY(100%);
-  opacity: 0;
-  transition-duration: 400ms;
+  font-size: 16px;
 }
 
 
@@ -224,15 +203,15 @@ header
   -moz-box-shadow: 0px 10px 45px -5px rgba(0,0,0,0.75);
   box-shadow: 0px 10px 45px -5px rgba(0,0,0,0.75);
 }
-.bg-3 .col-sm-6
+.bg-3 [class*='col-']
 {
   height: 330px;
 }
-.bg-4 .col-sm-6
+.bg-4 [class*='col-']
 {
   height: 500px;
 }
-.bg-5 .col-sm-6
+.bg-5 [class*='col-']
 {
   height: 370px;
 }
@@ -258,7 +237,7 @@ header
   margin-right: 10px;
 }
 
-.create-page .col-md-3, .create-page .col-md-6
+.create-page [class*='col-']
 {
   padding: 0px;
 }
@@ -345,8 +324,6 @@ div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active
 
 
 
-
-/*----------Custom style start----------*/
 body
 {
   background-color: #D3322C !important;
@@ -355,14 +332,32 @@ body
 {
   background-color: #fcfcfc;
 }
-.menu-1
+
+@media only screen and (max-width: 420px)
 {
-  background: rgba(85,43,87,1);
-  background: -moz-linear-gradient(45deg, rgba(85,43,87,1) 0%, rgba(132,128,143,1) 50%, rgba(46,44,88,1) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(85,43,87,1)), color-stop(50%, rgba(132,128,143,1)), color-stop(100%, rgba(46,44,88,1)));
-  background: -webkit-linear-gradient(45deg, rgba(85,43,87,1) 0%, rgba(132,128,143,1) 50%, rgba(46,44,88,1) 100%);
-  background: -o-linear-gradient(45deg, rgba(85,43,87,1) 0%, rgba(132,128,143,1) 50%, rgba(46,44,88,1) 100%);
-  background: -ms-linear-gradient(45deg, rgba(85,43,87,1) 0%, rgba(132,128,143,1) 50%, rgba(46,44,88,1) 100%);
-  background: linear-gradient(45deg, rgba(85,43,87,1) 0%, rgba(132,128,143,1) 50%, rgba(46,44,88,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#552b57', endColorstr='#2e2c58', GradientType=1 );
+  .bg-1 h1
+  {
+    font-size: 20px;
+  }
+  .bg-1 small
+  {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .bg-2
+  {
+    font-size: 18px;
+  }
+  .bg-2 .create
+  {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .loader
+  {
+    margin: 20px auto 15px auto;
+  }
+
 }
