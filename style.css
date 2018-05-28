@@ -9,6 +9,7 @@ a
 body
 {
   font-family: 'Montserrat' !important;
+  background-color: #D3322C !important;
 }
 
 col-md-3
@@ -154,13 +155,13 @@ header
 /* ====== SUGGESTIONS === */
 .suggestions
 {
-  max-width: 1000px;
+  max-width: 940px;
 }
 .suggestions [class*='col-']
 {
   width: 220px;
-  margin-left: 0;
   margin-right: 20px;
+  padding: 0;
 }
 .suggestions [class*="col-"]:last-child
 {
@@ -199,6 +200,7 @@ header
   letter-spacing: 1px;
   margin: 40px 0 80px 0;
   max-width: 1100px;
+  background-color: #fcfcfc;
   -webkit-box-shadow: 0px 10px 45px -5px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 10px 45px -5px rgba(0,0,0,0.75);
   box-shadow: 0px 10px 45px -5px rgba(0,0,0,0.75);
@@ -315,7 +317,6 @@ div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active
   outline: none !important;
   color: #222;
 }
-
 #requests
 {
   width: 90%;
@@ -323,15 +324,6 @@ div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active
 }
 
 
-
-body
-{
-  background-color: #D3322C !important;
-}
-.create-page
-{
-  background-color: #fcfcfc;
-}
 
 @media only screen and (max-width: 420px)
 {
