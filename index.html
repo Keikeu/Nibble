@@ -14,142 +14,129 @@
   <body>
 
 <!-- FIXED HEADER -->
-    <header>
-      <div class="container-fluid bg-1">
-          <img src="img/slices.jpg" width="40px" style="float:left; margin: 5px 20px 0 0"/><span><h1> Nibble <small>individualize your pizza </small> </h1></span>
-      </div>
+    <header class="header">
+      <img src="img/slices.jpg" width="40px"/>
+      <h1>Nibble</h1>
+      <small>individualize your pizza</small>
     </header>
 
-<!-- LOADER AND DESCRIPTION -->
-		<div class="container-fluid bg-2">
-      <div class="col-md-4 col-md-offset-4 text-center">
-        <div class="loader"></div>
-      </div>
-			<div class="col-md-6 col-md-offset-3 text-center">
-				Build an Italian style pizza on your favorite crust with a choice of any delicious toppings and sauces.
-        <br>Make it the way you like it!
-			</div>
-  		<div class="col-md-8 col-md-offset-2 text-center">
-				<button type="button" class="btn-sharp create"> Let's create this beauty </button>
-			</div>
-		</div>
+<!-- INTRODUCTION -->
+		<main>
+      <div class="loader"></div>
+			<p>Build an Italian style pizza on your favorite crust with a choice of any delicious toppings and sauces.</p>
+      <p>Make it the way you like it!</p>
+			<button type="button" class="btn-sharp create"> Let's create this beauty </button>
+		</main>
 
-<!-- SPECIAL OFFERS -->
-    <div class="container section-title">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1>Special offer <br><small> Discounts will be applied automatically.</small></h1>
+<!-- SPECIAL OFFER -->
+    <section class="container">
+      <header>
+        <h1>Special offer</h1>
+        <small>Discounts will be applied automatically</small>
+      </header>
+      <div class="row row--offer">
+        <div class="col-sm-6 col-md-3 p-2">
+          <div class="offer__item">
+            <h3>Why not both?</h3>
+            2nd pizza <br> 50% off
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container soldes">
-      <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <h3>Why not both?</h3>
-          2nd smaller pizza <br> 50% off
+        <div class="col-sm-6 col-md-3 p-2">
+          <div class="offer__item">
+            <h3>Home alone</h3>
+            1 medium pizza <br><i class="fas fa-arrow-alt-circle-down"></i><br> 1 dip FREE
+          </div>
         </div>
-        <div class="col-sm-6 col-md-3">
-          <h3>Home alone</h3>
-          1 medium pizza <br><i class="fas fa-arrow-alt-circle-down"></i><br> 1 dip FREE
+        <div class="col-sm-6 col-md-3 p-2">
+          <div class="offer__item">
+            <h3>Fire it up</h3>
+            1 big pizza <br><i class="fas fa-arrow-alt-circle-down"></i><br> 2 dips FREE
+          </div>
         </div>
-
-        <div class="col-sm-6 col-md-3">
-          <h3>Fire it up</h3>
-          1 big pizza <br><i class="fas fa-arrow-alt-circle-down"></i><br> 2 dips FREE
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <h3>Party anyone?</h3>
-          1 gigantic pizza <br><i class="fas fa-arrow-alt-circle-down"></i><br> 2 dips and 2 drinks FREE
+        <div class="col-sm-6 col-md-3 p-2">
+          <div class="offer__item">
+            <h3>Party anyone?</h3>
+            1 gigantic pizza <br><i class="fas fa-arrow-alt-circle-down"></i><br> 2 dips and 2 drinks FREE
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
 <!-- PIZZA SUGGESTIONS -->
-    <div class="container section-title">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1>Our suggestions</h1>
-          <small>Sometimes it's better to trust the chef</small>
+    <section class="container">
+      <header>
+        <h1>Our suggestions</h1>
+        <small>Sometimes it's better to trust the chef</small>
+      </header>
+      <div class="row row--suggest">
+        <div class="col-md-3 col-sm-4">
+          <img src="img/pizza1.jpg"/>
+          <div class="ingredients">
+            <h4>A weirdough</h4>
+            <p> Cheddar, Black Olives, Bell Pepper, Basil </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <img src="img/pizza2.jpg"/>
+          <div class="ingredients">
+            <h4>Slice to meet you</h4>
+            <p> Mozarella, Pesto, Prawns, Black Olives </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <img src="img/pizza3.jpg"/>
+          <div class="ingredients">
+            <h4>Triple Bypass</h4>
+            <p> Parmesan, Jalapeno Pepper, Leek, Ground Beef, Mushrooms</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <img src="img/pizza4.jpg"/>
+          <div class="ingredients">
+            <h4>Cheeses Crust</h4>
+            <p> Mozarella, Goat Cheese, Grilled Zuccini, Arugula, Tomato </p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container suggestions">
-      <div class="row">
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <img src="img/pizza1.jpg" width="220px" height="220px"/>
-            <div class="ingredients">
-              <h4>A weirdough</h4>
-              <p> Cheddar, Black Olives, Bell Pepper, Basil </p>
-            </div>
+      <div class="row row--suggest">
+        <div class="col-md-3 col-sm-4">
+          <img src="img/pizza5.jpg"/>
+          <div class="ingredients">
+            <h4>The circle of life</h4>
+            <p> Cheddar, Spicy Chicken, Pepperoni, Fresh Spinach, Rosemary </p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <img src="img/pizza2.jpg" width="220px" height="220px"/>
-            <div class="ingredients">
-              <h4>Slice to meet you</h4>
-              <p> Mozarella, Pesto, Prawns, Black Olives </p>
-            </div>
+        <div class="col-md-3 col-sm-4">
+          <img src="img/pizza6.jpg"/>
+          <div class="ingredients">
+            <h4>This is how I cut carbs</h4>
+            <p> Mozarella, Red Onion, Corn, Salami, Smoky Bacon, Scrambled Eggs </p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <img src="img/pizza3.jpg" width="220px" height="220px"/>
-            <div class="ingredients">
-              <h4>Triple Bypass</h4>
-              <p> Parmesan, Jalapeno Pepper, Leek, Ground Beef, Mushrooms</p>
-            </div>
+        <div class="col-md-3 col-sm-4">
+          <img src="img/pizza7.jpg"/>
+          <div class="ingredients">
+            <h4>Sweet revenge</h4>
+            <p> Ricotta, Honey, Grilled Cherry, Lime </p>
+          </div>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <img src="img/pizza4.jpg" width="220px" height="220px"/>
-            <div class="ingredients">
-              <h4>Cheeses Crust</h4>
-              <p> Mozarella, Goat Cheese, Grilled Zuccini, Arugula, Tomato </p>
-            </div>
+        <div class="col-md-3 col-sm-4">
+          <img src="img/pizza8.jpg"/>
+          <div class="ingredients">
+            <h4>Pie like you berry much</h4>
+            <p> Ricotta, Blueberry, Figs, Honey </p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <img src="img/pizza5.jpg" width="220px" height="220px"/>
-            <div class="ingredients">
-              <h4>The circle of life</h4>
-              <p> Cheddar, Spicy Chicken, Pepperoni, Fresh Spinach, Rosemary </p>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <img src="img/pizza6.jpg" width="220px" height="220px"/>
-            <div class="ingredients">
-              <h4>This is how I cut carbs</h4>
-              <p> Mozarella, Red Onion, Corn, Salami, Smoky Bacon, Scrambled Eggs </p>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <img src="img/pizza7.jpg" width="220px" height="220px"/>
-            <div class="ingredients">
-              <h4>Sweet revenge</h4>
-              <p> Ricotta, Honey, Grilled Cherry, Lime </p>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <img src="img/pizza8.jpg" width="220px" height="220px"/>
-            <div class="ingredients">
-              <h4>Pie like you berry much</h4>
-              <p> Ricotta, Blueberry, Figs, Honey </p>
-            </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
 <!-- CRUST, FLAVOR, SAUCE, SIZE -->
-    <div class="container section-title">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1>Basic stuff</h1>
-          <small>Be creative and choose whatever you want</small>
-        </div>
-      </div>
-    </div>
-
-    <div class="container bg-3 create-page">
-      <div class="row">
+    <section class="container">
+      <header>
+        <h1>Basic stuff</h1>
+        <small>Be creative and choose whatever you want</small>
+      </header>
+      <div class="row row--customize">
         <div class="col-md-3 col-sm-6">
           <h2> CRUST </h2>
           <div class="btn-group btn-group-vertical" data-toggle="buttons">
@@ -228,20 +215,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 <!-- TOPPINGS -->
-    <div class="container section-title">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1>Top it up</h1>
-          <small>Maximum number of toppings is 8</small>
-        </div>
-      </div>
-    </div>
-
-    <div class="container bg-4 create-page">
-      <div class="row">
+    <section class="container">
+      <header>
+        <h1>Top it up</h1>
+        <small>Maximum number of toppings is 8</small>
+      </header>
+      <div class="row row--customize">
         <div class="col-md-3 col-sm-6">
           <h2> CHEESE </h2>
           <div class="btn-group btn-group-vertical" data-toggle="buttons">
@@ -371,20 +353,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 <!-- DIPS, DRINKS, EXTRA REQUESTS -->
-    <div class="container section-title">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1>Extras</h1>
-          <small>How about taking some liquids?</small>
-        </div>
-      </div>
-    </div>
-
-    <div class="container bg-5 create-page">
-      <div class="row">
+    <section class="container">
+      <header>
+        <h1>Extras</h1>
+        <small>How about taking some liquids?</small>
+      </header>
+      <div class="row row--customize">
         <div class="col-md-3 col-sm-6">
           <h2> DIP </h2>
           <div class="btn-group btn-group-vertical" data-toggle="buttons">
@@ -439,20 +416,14 @@
         </div>
         <div class="col-md-6 col-sm-12">
           <h2 style="border-bottom: 1px solid #ccc; padding-left: 27px"> ANY ADDITIONAL REQUESTS? </h2>
-            <textarea class="form-control" id="requests" rows="12" placeholder="I want a drawing of an elephant on the pizza box."></textarea>
+          <textarea class="form-control requests" rows="12" placeholder="I want a drawing of an elephant on the pizza box."></textarea>
         </div>
       </div>
-    </div>
+    </section>
 
 
 <!-- SUBMIT BUTTON (not functional yet) -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-          <button type="button" class="btn-sharp submit"> Let's make it </button>
-        </div>
-      </div>
-    </div>
+    <button type="button" class="btn-sharp submit"> Let's make it </button>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -475,6 +446,7 @@
         $('.bg-2').delay( 1800 ).slideUp( 800 );
       });
     </script>
+    <script src="http://localhost:35729/livereload.js"></script>
 
   </body>
 </html>
