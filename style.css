@@ -265,16 +265,11 @@ label input[type="checkbox"]:checked~i.far.fa-square {
   display: none;
 }
 
-.btn-group {
-  width: 100%;
-}
-
-.btn {
-  display: inline-block;
+.form__item {
+  display: block;
   height: 43px;
   padding: 10px 0 10px 10px;
   margin: 0;
-  border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   border-radius: 0;
   font-size: 14px;
