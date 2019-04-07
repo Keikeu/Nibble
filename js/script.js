@@ -87,13 +87,13 @@ let calc = function(event) {
 }
 
 for(let i = 0; i < checkboxes.length; i++) {
-  checkboxes[i].addEventListener('click', function() {
+  checkboxes[i].addEventListener('click', function(event) {
     calc(event);
   });
 }
 
 for(let i = 0; i < radios.length; i++) {
-  radios[i].addEventListener('click', function() {
+  radios[i].addEventListener('click', function(event) {
     calc(event);
   });
 }
