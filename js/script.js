@@ -41,11 +41,16 @@ let calc = function(event) {
   }
 
   let discount = 0;
+  let factor = 1;
   const sizes = document.getElementsByName('size');
   const dips = document.getElementsByName('dip');
   const beverages = document.getElementsByName('beverages');
+  const d = new Date();
 
-  if(sizes[1].checked) {
+  if(d.getDay() === 1) {
+    factor = 0.8;
+  }
+  else if(sizes[1].checked) {
     let freeDipsCount = 1;
     for(let i = 0; i < dips.length; i++) {
       if(freeDipsCount !== 0 && dips[i].checked) {
@@ -78,7 +83,7 @@ let calc = function(event) {
     }
   }
 
-  cartSum.innerHTML = '$ ' + (checkSum + radioSum - discount).toFixed(2);
+  cartSum.innerHTML = '$ ' + ((checkSum + radioSum - discount) * factor).toFixed(2);
 }
 
 for(let i = 0; i < checkboxes.length; i++) {
