@@ -97,3 +97,7 @@ for(let i = 0; i < radios.length; i++) {
     calc(event);
   });
 }
+
+document.querySelector('.submit').addEventListener('click', () => {
+  alert('Nice creation! Unfortunately this is just a demo site, you can\'t order this pizza. Sorry :(');
+});
