@@ -5,7 +5,7 @@
   <title>Nibble - Individualize your pizza</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Oswald|Syncopate|Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Oswald|Montserrat:400,700" rel="stylesheet">
   <link rel="icon" href="img/slices.jpg">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,6 +19,10 @@
     <img src="img/slices.jpg" width="40px" />
     <h1>Nibble</h1>
     <small>individualize your pizza</small>
+    <div class="cart">
+      <span class="cart__sum">$ 6.00</span>
+      <i class="fas fa-shopping-basket"></i>
+    </div>
   </header>
 
   <!-- INTRODUCTION -->
@@ -140,34 +144,34 @@
     <div class="row row--customize">
       <div class="col-md-3 col-sm-6">
         <h2> CRUST </h2>
-        <label class="form__item"> <input type="radio" name='crust' checked><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Original Pan Pizza   </label>
-        <label class="form__item"> <input type="radio" name='crust'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Thin                         </label>
-        <label class="form__item"> <input type="radio" name='crust'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Thicc                        </label>
-        <label class="form__item"> <input type="radio" name='crust'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Whole Grain                  </label>
-        <label class="form__item"> <input type="radio" name='crust'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Tortilla                     </label>
-        <label class="form__item"> <input type="radio" name='crust'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Gluten Free                  </label>
+        <label class="form__item"> <input type="radio" name='crust' checked value="0.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Regular   </label>
+        <label class="form__item"> <input type="radio" name='crust' value="0.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Thin              </label>
+        <label class="form__item"> <input type="radio" name='crust' value="0.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Thick             </label>
+        <label class="form__item"> <input type="radio" name='crust' value="0.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Whole Grain       </label>
+        <label class="form__item"> <input type="radio" name='crust' value="0.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Tortilla          </label>
+        <label class="form__item"> <input type="radio" name='crust' value="0.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Gluten Free       </label>
       </div>
       <div class="col-md-3 col-sm-6">
         <h2> CRUST FLAVOR </h2>
-        <label class="form__item"> <input type="radio" name='flavor' checked><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> No Crust Flavor   </label>
-        <label class="form__item"> <input type="radio" name='flavor'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Toasted Cheddar           </label>
-        <label class="form__item"> <input type="radio" name='flavor'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Salted Pretzel            <code class="float-right">+$0.70</code> </label>
-        <label class="form__item"> <input type="radio" name='flavor'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Buttery Blend             <code class="float-right">+$0.70</code> </label>
+        <label class="form__item"> <input type="radio" name='flavor' checked value="0.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> No Crust Flavor   </label>
+        <label class="form__item"> <input type="radio" name='flavor' value="0.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Toasted Cheddar           </label>
+        <label class="form__item"> <input type="radio" name='flavor' value="0.70"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Salted Pretzel            <code class="float-right">+$0.70</code> </label>
+        <label class="form__item"> <input type="radio" name='flavor' value="0.70"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Buttery Blend             <code class="float-right">+$0.70</code> </label>
       </div>
       <div class="col-md-3 col-sm-6">
         <h2> SAUCE </h2>
-        <label class="form__item"> <input type="radio" name='sauce' checked><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Classic Marinara   </label>
-        <label class="form__item"> <input type="radio" name='sauce'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Crème Fraîche              <code class="float-right">+$0.40</code> </label>
-        <label class="form__item"> <input type="radio" name='sauce'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> BBQ                        </label>
-        <label class="form__item"> <input type="radio" name='sauce'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Garlic Parmesan            <code class="float-right">+$0.70</code> </label>
-        <label class="form__item"> <input type="radio" name='sauce'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Dried Tomatoes             <code class="float-right">+$0.50</code> </label>
+        <label class="form__item"> <input type="radio" name='sauce' checked value="0.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Classic Marinara   </label>
+        <label class="form__item"> <input type="radio" name='sauce' value="0.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Herbed Olive Oil           </label>
+        <label class="form__item"> <input type="radio" name='sauce' value="0.40"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Crème Fraiche              <code class="float-right">+$0.40</code> </label>
+        <label class="form__item"> <input type="radio" name='sauce' value="0.50"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Sun-Dried Tomatoes         <code class="float-right">+$0.50</code> </label>
+        <label class="form__item"> <input type="radio" name='sauce' value="0.70"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> Garlic Parmesan            <code class="float-right">+$0.70</code> </label>
       </div>
       <div class="col-md-3 col-sm-6">
         <h2> SIZE </h2>
-        <label class="form__item"> <input type="radio" name='size' checked><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> 8" Small  <code class="float-right">$4.00</code> </label>
-        <label class="form__item"> <input type="radio" name='size'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> 10" Medium        <code class="float-right">$6.00</code> </label>
-        <label class="form__item"> <input type="radio" name='size'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> 12" Big           <code class="float-right">$8.00</code> </label>
-        <label class="form__item"> <input type="radio" name='size'><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> 15" Gigantic      <code class="float-right">$10.00</code> </label>
+        <label class="form__item"> <input type="radio" name='size' checked value="6.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> 8" Small   <code class="float-right">$6.00</code> </label>
+        <label class="form__item"> <input type="radio" name='size' value="9.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> 10" Medium         <code class="float-right">$9.00</code> </label>
+        <label class="form__item"> <input type="radio" name='size' value="11.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> 12" Big           <code class="float-right">$11.00</code> </label>
+        <label class="form__item"> <input type="radio" name='size' value="14.00"><i class="far fa-circle"></i><i class="far fa-dot-circle"></i> 16" Gigantic      <code class="float-right">$14.00</code> </label>
       </div>
     </div>
   </section>
@@ -181,51 +185,51 @@
     <div class="row row--customize">
       <div class="col-md-3 col-sm-6">
         <h2> CHEESE </h2>
-        <label class="form__item"> <input type="checkbox" name='cheese'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Mozarella          <code class="float-right">+$0.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='cheese'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Cheddar            <code class="float-right">+$0.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='cheese'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Feta               <code class="float-right">+$0.70</code></label>
-        <label class="form__item"> <input type="checkbox" name='cheese'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Parmesan           <code class="float-right">+$1.20</code></label>
-        <label class="form__item"> <input type="checkbox" name='cheese'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Goat Cheese        <code class="float-right">+$1.70</code></label>
-        <label class="form__item"> <input type="checkbox" name='cheese'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Lamb Cheese        <code class="float-right">+$1.90</code></label>
-        <label class="form__item"> <input type="checkbox" name='cheese'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Blue Cheese        <code class="float-right">+$1.00</code></label>
-        <label class="form__item"> <input type="checkbox" name='cheese'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Dairy Free Cheese  <code class="float-right">+$1.00</code></label>
+        <label class="form__item"> <input type="checkbox" name='cheese' value="0.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Mozarella          <code class="float-right">+$0.50</code></label>
+        <label class="form__item"> <input type="checkbox" name='cheese' value="0.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Cheddar            <code class="float-right">+$0.50</code></label>
+        <label class="form__item"> <input type="checkbox" name='cheese' value="0.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Feta               <code class="float-right">+$0.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='cheese' value="1.00"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Blue Cheese        <code class="float-right">+$1.00</code></label>
+        <label class="form__item"> <input type="checkbox" name='cheese' value="1.00"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Dairy Free Cheese  <code class="float-right">+$1.00</code></label>
+        <label class="form__item"> <input type="checkbox" name='cheese' value="1.20"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Parmesan           <code class="float-right">+$1.20</code></label>
+        <label class="form__item"> <input type="checkbox" name='cheese' value="1.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Goat Cheese        <code class="float-right">+$1.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='cheese' value="1.90"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Lamb Cheese        <code class="float-right">+$1.90</code></label>
       </div>
       <div class="col-md-3 col-sm-6">
         <h2> VEGGIES </h2>
-        <label class="form__item"> <input type="checkbox" name='veggies'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Tomatoes          <code class="float-right">+$0.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='veggies'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Red Onion         <img width="13px" src="img/fire.png" /> <code class="float-right">+$0.90</code></label>
-        <label class="form__item"> <input type="checkbox" name='veggies'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Black Olives      <code class="float-right">+$1.20</code></label>
-        <label class="form__item"> <input type="checkbox" name='veggies'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Bell Pepper       <code class="float-right">+$1.30</code></label>
-        <label class="form__item"> <input type="checkbox" name='veggies'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Jalapeno Pepper   <img width="13px" src="img/fire.png" /> <code class="float-right">+$1.30</code></label>
-        <label class="form__item"> <input type="checkbox" name='veggies'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Artichokes        <code class="float-right">+$2.00</code></label>
-        <label class="form__item"> <input type="checkbox" name='veggies'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Corn              <code class="float-right">+$1.30</code></label>
-        <label class="form__item"> <input type="checkbox" name='veggies'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Grilled Zucchini  <code class="float-right">+$2.60</code></label>
-        <label class="form__item"> <input type="checkbox" name='veggies'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Arugula           <img width="13px" src="img/fire.png" /><code class="float-right">+$1.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='veggies'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Fresh Spinach     <code class="float-right">+$0.80</code></label>
+        <label class="form__item"> <input type="checkbox" name='veggies' value="0.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Tomatoes          <code class="float-right">+$0.50</code></label>
+        <label class="form__item"> <input type="checkbox" name='veggies' value="0.80"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Fresh Spinach     <code class="float-right">+$0.80</code></label>
+        <label class="form__item"> <input type="checkbox" name='veggies' value="0.90"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Red Onion         <img width="13px" src="img/fire.png" /> <code class="float-right">+$0.90</code></label>
+        <label class="form__item"> <input type="checkbox" name='veggies' value="1.20"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Black Olives      <code class="float-right">+$1.20</code></label>
+        <label class="form__item"> <input type="checkbox" name='veggies' value="1.30"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Bell Pepper       <code class="float-right">+$1.30</code></label>
+        <label class="form__item"> <input type="checkbox" name='veggies' value="1.30"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Jalapeno Pepper   <img width="13px" src="img/fire.png" /> <code class="float-right">+$1.30</code></label>
+        <label class="form__item"> <input type="checkbox" name='veggies' value="1.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Arugula           <code class="float-right">+$1.50</code></label>
+        <label class="form__item"> <input type="checkbox" name='veggies' value="1.30"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Corn              <code class="float-right">+$1.30</code></label>
+        <label class="form__item"> <input type="checkbox" name='veggies' value="2.00"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Artichokes        <code class="float-right">+$2.00</code></label>
+        <label class="form__item"> <input type="checkbox" name='veggies' value="2.60"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Grilled Zucchini  <code class="float-right">+$2.60</code></label>
       </div>
       <div class="col-md-3 col-sm-6">
         <h2> PROTEIN </h2>
-        <label class="form__item"> <input type="checkbox" name='meat'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Salami           <code class="float-right">+$2.80</code></label>
-        <label class="form__item"> <input type="checkbox" name='meat'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Chicken          <code class="float-right">+$1.90</code></label>
-        <label class="form__item"> <input type="checkbox" name='meat'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Pepperoni        <code class="float-right">+$2.60</code></label>
-        <label class="form__item"> <input type="checkbox" name='meat'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Smoky Bacon      <code class="float-right">+$3.00</code></label>
-        <label class="form__item"> <input type="checkbox" name='meat'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Spicy Chicken    <img width="13px" src="img/fire.png" /><code class="float-right">+$2.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='meat'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Polish Sausage   <code class="float-right">+$2.70</code></label>
-        <label class="form__item"> <input type="checkbox" name='meat'><i class="fas fa-check-square"></i><i class="far fa-square"></i> BBQ Steak        <code class="float-right">+$3.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='meat'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Anchovies        <code class="float-right">+$2.20</code></label>
-        <label class="form__item"> <input type="checkbox" name='meat'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Shrimps          <code class="float-right">+$4.20</code></label>
+        <label class="form__item"> <input type="checkbox" name='protein' value="1.90"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Chicken          <code class="float-right">+$1.90</code></label>
+        <label class="form__item"> <input type="checkbox" name='protein' value="2.20"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Anchovies        <code class="float-right">+$2.20</code></label>
+        <label class="form__item"> <input type="checkbox" name='protein' value="2.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Spicy Chicken    <img width="13px" src="img/fire.png"/><code class="float-right">+$2.50</code></label>
+        <label class="form__item"> <input type="checkbox" name='protein' value="2.60"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Pepperoni        <code class="float-right">+$2.60</code></label>
+        <label class="form__item"> <input type="checkbox" name='protein' value="2.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Hot Soppressata  <img width="13px" src="img/fire.png"/><code class="float-right">+$2.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='protein' value="2.80"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Salami           <code class="float-right">+$2.80</code></label>
+        <label class="form__item"> <input type="checkbox" name='protein' value="3.00"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Smoky Bacon      <code class="float-right">+$3.00</code></label>
+        <label class="form__item"> <input type="checkbox" name='protein' value="3.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> BBQ Steak        <code class="float-right">+$3.50</code></label>
+        <label class="form__item"> <input type="checkbox" name='protein' value="4.20"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Shrimps          <code class="float-right">+$4.20</code></label>
       </div>
       <div class="col-md-3 col-sm-6">
         <h2> OTHER </h2>
-        <label class="form__item"> <input type="checkbox" name='other'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Mushrooms       <code class="float-right">+$1.40</code></label>
-        <label class="form__item"> <input type="checkbox" name='other'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Scrambled Eggs  <code class="float-right">+$1.40</code></label>
-        <label class="form__item"> <input type="checkbox" name='other'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Basil           <code class="float-right">+$0.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='other'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Pesto           <img width="13px" src="img/fire.png"/><code class="float-right">+$1.90</code></label>
-        <label class="form__item"> <input type="checkbox" name='other'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Rosemary        <code class="float-right">+$0.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='other'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Pineapple       <code class="float-right">+$2.90</code></label>
-        <label class="form__item"> <input type="checkbox" name='other'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Ricotta         <code class="float-right">+$2.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='other'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Grilled Cherry  <code class="float-right">+$2.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='other'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Lime            <code class="float-right">+$1.30</code></label>
+        <label class="form__item"> <input type="checkbox" name='other' value="0.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Basil           <code class="float-right">+$0.50</code></label>
+        <label class="form__item"> <input type="checkbox" name='other' value="0.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Rosemary        <code class="float-right">+$0.50</code></label>
+        <label class="form__item"> <input type="checkbox" name='other' value="1.30"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Lime            <code class="float-right">+$1.30</code></label>
+        <label class="form__item"> <input type="checkbox" name='other' value="1.40"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Mushrooms       <code class="float-right">+$1.40</code></label>
+        <label class="form__item"> <input type="checkbox" name='other' value="1.40"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Scrambled Eggs  <code class="float-right">+$1.40</code></label>
+        <label class="form__item"> <input type="checkbox" name='other' value="1.90"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Pesto           <img width="13px" src="img/fire.png"/><code class="float-right">+$1.90</code></label>
+        <label class="form__item"> <input type="checkbox" name='other' value="2.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Ricotta         <code class="float-right">+$2.50</code></label>
+        <label class="form__item"> <input type="checkbox" name='other' value="2.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Grilled Cherry  <code class="float-right">+$2.50</code></label>
+        <label class="form__item"> <input type="checkbox" name='other' value="2.90"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Pineapple       <code class="float-right">+$2.90</code></label>
       </div>
     </div>
   </section>
@@ -239,26 +243,26 @@
     <div class="row row--customize">
       <div class="col-md-3 col-sm-6">
         <h2> DIP </h2>
-        <label class="form__item"> <input type="checkbox" name='dip'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Garlic        <code class="float-right">+$2.70</code></label>
-        <label class="form__item"> <input type="checkbox" name='dip'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Tomato        <code class="float-right">+$2.40</code></label>
-        <label class="form__item"> <input type="checkbox" name='dip'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Cheese        <code class="float-right">+$2.90</code></label>
-        <label class="form__item"> <input type="checkbox" name='dip'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Ranch         <img width="13px" src="img/fire.png" /> <code class="float-right">+$3.20</code></label>
-        <label class="form__item"> <input type="checkbox" name='dip'><i class="fas fa-check-square"></i><i class="far fa-square"></i> 1000 Islands  <code class="float-right">+$4.00</code></label>
-        <label class="form__item"> <input type="checkbox" name='dip'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Tzatziki      <code class="float-right">+$3.70</code></label>
-        <label class="form__item"> <input type="checkbox" name='dip'><i class="fas fa-check-square"></i><i class="far fa-square"></i> Spinaccio     <code class="float-right">+$3.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='dip' value="2.40"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Tomato          <code class="float-right">+$2.40</code></label>
+        <label class="form__item"> <input type="checkbox" name='dip' value="2.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Garlic          <code class="float-right">+$2.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='dip' value="2.90"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Honey Mustard   <code class="float-right">+$2.90</code></label>
+        <label class="form__item"> <input type="checkbox" name='dip' value="3.20"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Jalapeno Ranch  <img width="13px" src="img/fire.png"/> <code class="float-right">+$3.20</code></label>
+        <label class="form__item"> <input type="checkbox" name='dip' value="3.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Hot Wing        <img width="13px" src="img/fire.png"/><code class="float-right">+$3.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='dip' value="3.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Blue Cheese     <code class="float-right">+$3.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='dip' value="4.00"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Creamy Parmesan <code class="float-right">+$4.00</code></label>
       </div>
       <div class="col-md-3 col-sm-6">
         <h2> BEVERAGES </h2>
-        <label class="form__item"> <input type="checkbox" name='beverages' value="3.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Coca-cola      <code class="float-right">+$3.70</code></label>
-        <label class="form__item"> <input type="checkbox" name='beverages' value="3.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Black Energy   <code class="float-right">+$3.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='beverages' value="1.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Water          <code class="float-right">+$1.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='beverages' value="2.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Apple Juice    <code class="float-right">+$2.50</code></label>
         <label class="form__item"> <input type="checkbox" name='beverages' value="2.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Good Orange    <code class="float-right">+$2.70</code></label>
         <label class="form__item"> <input type="checkbox" name='beverages' value="3.40"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Nestea         <code class="float-right">+$3.40</code></label>
-        <label class="form__item"> <input type="checkbox" name='beverages' value="2.50"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Apple Juice    <code class="float-right">+$2.50</code></label>
-        <label class="form__item"> <input type="checkbox" name='beverages' value="1.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Water          <code class="float-right">+$1.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='beverages' value="3.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Coca-cola      <code class="float-right">+$3.70</code></label>
+        <label class="form__item"> <input type="checkbox" name='beverages' value="3.70"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Black Energy   <code class="float-right">+$3.70</code></label>
         <label class="form__item"> <input type="checkbox" name='beverages' value="4.90"><i class="fas fa-check-square"></i><i class="far fa-square"></i> Root beer      <code class="float-right">+$4.90</code></label>
       </div>
       <div class="col-md-6 col-sm-12">
-        <h2 style="border-bottom: 1px solid #ccc; padding-left: 27px"> ANY ADDITIONAL REQUESTS? </h2>
+        <h2 class="pl-4"> ANY ADDITIONAL REQUESTS? </h2>
         <textarea class="form-control requests" rows="12" placeholder="I want a drawing of an elephant on the pizza box."></textarea>
       </div>
     </div>
@@ -271,7 +275,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>
