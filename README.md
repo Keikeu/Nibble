@@ -1,8 +1,4 @@
 # Nibble - pizza creator
 
-You can see the final effect [here](https://keikeu.github.io/Nibble/)
+Made with HTML5, CSS3 and JavaScript. Take a look at [the live version](https://keikeu.github.io/Nibble/)
 
-However, there are still some changes to be done:
-* full responsiveness
-* cosmetic changes - new buttons and colours
-* adding price calculator
